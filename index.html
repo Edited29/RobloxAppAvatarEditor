@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avatar Editor</title>
+  <link rel="stylesheet" href="content/AvatarEditor/main.css">
+</head>
+<body>
+  <div class="container">
+    <div class="tabs">
+      <button class="tab-button active" data-tab="1">Body</button>
+      <button class="tab-button" data-tab="2">Clothing</button>
+      <button class="tab-button" data-tab="3">Accessories</button>
+    </div>
+    <div class="tab-content" id="tab-1">
+      <h2>Body Settings</h2>
+      <div class="avatar-options">
+        <label>Skin Tone: <input type="color" id="skin-tone"></label>
+        <label>Face Shape: <select id="face-shape">
+          <option>Round</option>
+          <option>Square</option>
+          <option>Oval</option>
+        </select></label>
+      </div>
+    </div>
+    <div class="tab-content" id="tab-2">
+      <h2>Clothing Settings</h2>
+      <div class="avatar-options">
+        <label>Shirt Color: <input type="color" id="shirt-color"></label>
+        <label>Pants Style: <select id="pants-style">
+          <option>Jeans</option>
+          <option>Shorts</option>
+          <option>Suit</option>
+        </select></label>
+      </div>
+    </div>
+    <div class="tab-content" id="tab-3">
+      <h2>Accessories Settings</h2>
+      <div class="avatar-options">
+        <label>Hat: <input type="checkbox" id="hat"> </label>
+        <label>Glasses: <input type="checkbox" id="glasses"> </label>
+      </div>
+    </div>
+  </div>
+  <script src="content/main.js"></script>
+</body>
+</html>
